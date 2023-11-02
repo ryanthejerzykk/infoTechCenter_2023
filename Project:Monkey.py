@@ -6,6 +6,8 @@ drivers know that the InfoTech Center 2023 is loading
 import sys
 # import libraries here
 import time
+import random
+from time import sleep
 
 time_to_sleep = 2
 
@@ -30,11 +32,10 @@ while x != 20:
 
 
 print("*****************************************************")
-print("gasoline branch\n")
+print("looking at gas levels\n")
 
-# import the library here
-import random
-from time import sleep
+
+
 # function that list gas levels and chooses one, and returning its value
 def gasLevelGauge():
     gasLevelList = ["Empty", " Low", "Quarter Tank", "Half tank", "Three Quarter Tank", "Full Tank"]
