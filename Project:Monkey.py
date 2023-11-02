@@ -22,9 +22,23 @@ def listofgasStation():
 def gasLevelAlert():
     milesToGasStationLow = round(random.uniform(1, 25), 1)
     milesToGasStationQuarter = round(random.uniform(25.1, 50), 1)
-
-    print("low =", milesToGasStationLow)
-    print("Quarter=", milesToGasStationQuarter)
-
-
+    gasLevelIndicator = gasLevelGauge()
+    if gasLevelIndicator == "Empty":
+        print("****YOU ARE EMPTY****")
+        sleep(2.1)
+        print("CALLING TRIPLE A")
+    elif gasLevelIndicator == "Low":
+        print("Your gas tank is low, looking for closest gas station")
+        sleep(1.1111111111111111111111111)
+        print("Closest gas station is", listofgasStation(),"which is",milesToGasStationLow, "miles away.")
+    elif gasLevelIndicator == "Quarter Tank":
+        print("Your gas tank is has a quarter of a tank left, looking for closest gas station")
+        sleep(1.1111111111111111111111111)
+        print("Closest gas station is", listofgasStation(),"which is",milesToGasStationQuarter, "miles away.")
+    elif gasLevelIndicator == "Half Tank":
+        print("your gas tank has a half tank checking for closest gas station.")
+    elif gasLevelIndicator == "Three Quarter Tank":
+        print("your gas has three quartes full")
+    else:
+        print("Your gas tank is full- Good Job")
 gasLevelAlert()
