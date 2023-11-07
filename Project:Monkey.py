@@ -24,7 +24,7 @@ while x != 20:
     message = ("InfoTech Center 2023 is loading" + "." * ellipsis)
     ellipsis = ellipsis + 1
     sys.stdout.write("\r" + message) # \r print a carriage return first so, message is printed on top of the past line
-    time.sleep(2.1)
+    time.sleep(1.1)
     if ellipsis == 4:
         ellipsis = 0
     if x == 20:
@@ -93,28 +93,28 @@ weatherAlert = nymbus()
 # VRS() will let the car respond to the weather
 def VRS():
     if weatherAlert == "snow":
-        print("NWS Has updated your alarm for 45min do to the forcast of ",weatherAlert)
-        print("VRS Has been Engaged drive max of 30 MPH")
+        print("\nNWS Has updated your alarm for 45min do to the forcast of ",weatherAlert)
+        print("\nVRS Has been Engaged drive max of 30 MPH")
     elif weatherAlert == "blizzard":
-        print("NWS Has updated your alarm for 2hours do to the forcast of ",weatherAlert)
-        print("VRS Has been Engaged drive max of 20 MPH")
+        print("\nNWS Has updated your alarm for 2hours do to the forcast of ",weatherAlert)
+        print("\nVRS Has been Engaged drive max of 20 MPH")
     elif weatherAlert == "rain":
-        print("NWS Has updated your alarm for 20min do to the forcast of ",weatherAlert)
-        print("VRS Has been Engaged drive max of 40 MPH")
+        print("\nNWS Has updated your alarm for 20min do to the forcast of ",weatherAlert)
+        print("\nVRS Has been Engaged drive max of 40 MPH")
     elif weatherAlert == "foggy":
-        print("NWS Has updated your alarm for 30min do to the forcast of ",weatherAlert)
-        print("VRS Has been Engaged drive max of 20 MPH")
+        print("\nNWS Has updated your alarm for 30min do to the forcast of ",weatherAlert)
+        print("\nVRS Has been Engaged drive max of 20 MPH")
     elif weatherAlert == "windy":
-        print("NWS Has updated your alarm for 10min do to the forcast of ",weatherAlert)
-        print("VRS Has been Engaged drive max of 50 MPH")
+        print("\nNWS Has updated your alarm for 10min do to the forcast of ",weatherAlert)
+        print("\nVRS Has been Engaged drive max of 50 MPH")
     elif weatherAlert == "icy":
-        print("NWS Has updated your alarm for 1hour do to the forcast of ",weatherAlert)
-        print("VRS Has been Engaged drive max of 20 MPH")
+        print("\nNWS Has updated your alarm for 1hour do to the forcast of ",weatherAlert)
+        print("\nVRS Has been Engaged drive max of 20 MPH")
     elif weatherAlert == "sunny":
-        print("NWS Has updated your alarm 10min do to the forcast of",weatherAlert)
-        print("VRS Has been Engaged drive max of 65 MPH")
+        print("\nNWS Has updated your alarm 10min do to the forcast of",weatherAlert)
+        print("\nVRS Has been Engaged drive max of 65 MPH")
     else:
-        print("NWS Has updated your alarm for 5min do to the forcast of",weatherAlert)
-        print("VRS Has been Engaged drive max of 70 MPH")
+        print("\nNWS Has updated your alarm for 5min do to the forcast of",weatherAlert)
+        print("\nVRS Has been Engaged drive max of 70 MPH")
 VRS()
 
